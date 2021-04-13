@@ -1,4 +1,5 @@
 import React from 'react'
+import EditableText from './SubComponents/EditableText.js'
 
 class PersonalDetails extends React.Component {
   constructor (props) {
@@ -28,6 +29,7 @@ class PersonalDetails extends React.Component {
   }
 
   handleFormChange (e) {
+    // targets form input element
     const { name, value } = e.target
     this.setState({ [name]: value })
   }
@@ -39,8 +41,7 @@ class PersonalDetails extends React.Component {
   render () {
     return (
       <div className='personal-details-container'>
-        <form className='personal-details'>
-        </form>
+        <EditableText default='test' tag='h1' />
       </div>
     )
   }
