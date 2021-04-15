@@ -25,7 +25,7 @@ class EditableText extends React.Component {
   handleFormChange (e) {
     const { value } = e.target
     this.setState({
-      editText: value
+      text: value
     })
   }
 
