@@ -41,6 +41,7 @@ class EditableText extends React.Component {
         ? <input
         type='text'
         value={this.state.text}
+        className={`form-${this.state.tag}`}
         autoFocus='true'
         onBlur={this.toggleEdit}
         onChange={this.handleFormChange}
