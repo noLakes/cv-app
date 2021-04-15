@@ -1,10 +1,10 @@
 import React from 'react'
-import EditableText from './SubComponents/EditableText.js'
+import EditableText from './SubComponents/EditableText'
 
 class PersonalDetails extends React.Component {
   render () {
     return (
-      <div className='personal-details-container'>
+      <div className='personal-details-container  cv-section'>
         <EditableText default='First Name' tag='h1' />
         <EditableText default='Last Name' tag='h1' />
         <EditableText default='title/occupation' tag='h2'/>
