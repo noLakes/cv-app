@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 
 class EditableText extends React.Component {
@@ -8,7 +9,8 @@ class EditableText extends React.Component {
       default: this.props.default,
       editing: false,
       tag: this.props.tag,
-      text: this.props.default
+      text: this.props.default,
+      inputType: this.props.inputType || 'text'
     }
 
     this.toggleEdit = this.toggleEdit.bind(this)
@@ -39,7 +41,7 @@ class EditableText extends React.Component {
     return (
       this.state.editing
         ? <input
-        type='text'
+        type={this.state.inputType}
         value={this.state.text}
         className={`form-${this.state.tag}`}
         autoFocus='true'
