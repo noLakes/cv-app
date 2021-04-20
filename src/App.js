@@ -1,15 +1,13 @@
 import React from 'react'
-import Header from './Components/Header.js'
-import PersonalDetails from './Components/PersonalDetails'
-import Summary from './Components/Summary'
+import Header from './Components/Header'
+import Resume from './Components/Resume'
 
 class App extends React.Component {
   render () {
     return (
       <div className='main-container'>
         <Header title="cv buddy"/>
-        <PersonalDetails />
-        <Summary />
+        <Resume />
       </div>
     )
   }
