@@ -2,7 +2,6 @@ import React from 'react'
 import Header from './Components/Header.js'
 import PersonalDetails from './Components/PersonalDetails'
 import Summary from './Components/Summary'
-import AddableSection from './Components/AddableSection'
 
 class App extends React.Component {
   render () {
@@ -11,7 +10,6 @@ class App extends React.Component {
         <Header title="cv buddy"/>
         <PersonalDetails />
         <Summary />
-        <AddableSection title='Experience' itemType='Job'/>
       </div>
     )
   }
