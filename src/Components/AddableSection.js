@@ -47,13 +47,20 @@ class AddableSection extends React.Component {
 
   handleSubmit (e, itemToSave) {
     e.preventDefault()
+    this.saveItem(itemToSave, e.target.dataset.index)
+    this.toggleEdit()
   }
 
   saveItem (item, index) {
+    this.setState({
+      items: this.state.items.splice(index, 1, item)
+    })
   }
 
-  handleDelete (itemIndex) {
-
+  handleDelete (index) {
+    this.setState({
+      items: this.state.items.splice(index, 1)
+    })
   }
 
   render () {
@@ -64,7 +71,7 @@ class AddableSection extends React.Component {
 
     const listItems = items.map((i, index) =>
       <li key={index}>
-        <i.type
+        <Job
         editing={i.editing}
         values={i.values}
         handleSubmit={this.handleSubmit}
