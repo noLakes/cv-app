@@ -11,8 +11,19 @@ function AddJobButton (props) {
   return null
 }
 
+function Job (props) {
+  const { data, handleDelete } = props
+  return (
+    <div className='job-container'>
+      <p>{data.employer}{data.role}</p>
+      <button onClick={() => handleDelete(data.id)}>del</button>
+    </div>
+  )
+}
+
 function JobForm (props) {
-  if (props.editing) {
+  const { editing, handleChange, handleSubmit } = props
+  if (editing) {
     return (
       <h1>I am Job Form!</h1>
     )
