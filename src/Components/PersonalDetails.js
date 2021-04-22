@@ -7,7 +7,7 @@ class PersonalDetails extends React.Component {
       <div className='personal-details-container  cv-section'>
         <EditableText default='First Name' tag='h1' />
         <EditableText default='Last Name' tag='h1' />
-        <EditableText default='title/occupation' tag='h2'/>
+        <EditableText default='title/occupation' tag='h3'/>
         <ul className='contact-details'>
           <EditableText default='address 1' tag='li'/>
           <EditableText default='city/state' tag='li'/>

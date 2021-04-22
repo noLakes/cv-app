@@ -5,7 +5,7 @@ class Summary extends React.Component {
   render () {
     return (
       <div className='summary-container cv-section'>
-        <h2>summary</h2>
+        <h3>summary</h3>
         <EditableText
         default='say something about yourself...'
         tag='p'

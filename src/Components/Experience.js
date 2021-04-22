@@ -83,7 +83,7 @@ class Experience extends React.Component {
 
     return (
       <div className='experience-container'>
-        <h2>Experience</h2>
+        <h3>Experience</h3>
         <ul className='job-list'>
           {jobList}
         </ul>
