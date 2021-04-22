@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 
-function Study (props) {
+function StudyItem (props) {
   const { data, handleDelete } = props
 
   return (
-    <div className='job-container'>
+    <div className='study-container'>
 
       <div className='study-details-container'>
         <h5 className='school'>{data.school}</h5>
@@ -24,4 +24,4 @@ function Study (props) {
   )
 }
 
-export default Study
+export default StudyItem

@@ -1,6 +1,6 @@
 import React from 'react'
 import uniqid from 'uniqid'
-import Study from './Study'
+import StudyItem from './StudyItem'
 import StudyForm from './StudyForm'
 import AddItemButton from './AddItemButton'
 
@@ -71,7 +71,7 @@ class Education extends React.Component {
     const studyList = this.state.studies.map(study => {
       return (
         <li key={study.id}>
-          <Study data={study} handleDelete={this.handleDelete}/>
+          <StudyItem data={study} handleDelete={this.handleDelete}/>
         </li>
       )
     })
