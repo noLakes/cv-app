@@ -1,0 +1,16 @@
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('./fonts/Ubuntu-Regular.ttf');
+  font-weight: 400;
+}
+
+* {
+  font-family: Ubuntu, Helvetica, sans-serif, Arial;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
