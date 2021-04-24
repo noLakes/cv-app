@@ -16,8 +16,8 @@ function SkillForm (props) {
         </div>
 
         <div className='form-control'>
-          <input type='button' value='cancel' onClick={cancelForm}/>
           <input type='submit' value='save'/>
+          <input type='button' value='cancel' onClick={cancelForm}/>
         </div>
 
       </form>

@@ -1,8 +1,8 @@
 import React from 'react'
 import uniqid from 'uniqid'
-import SkillItem from './SkillItem'
-import SkillForm from './SkillForm'
-import AddItemButton from './AddItemButton'
+import SkillItem from './SubComponents/SkillItem'
+import SkillForm from './SubComponents/SkillForm'
+import AddItemButton from './SubComponents/AddItemButton'
 
 class Skills extends React.Component {
   constructor (props) {

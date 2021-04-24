@@ -1,8 +1,8 @@
 import React from 'react'
 import uniqid from 'uniqid'
-import StudyItem from './StudyItem'
-import StudyForm from './StudyForm'
-import AddItemButton from './AddItemButton'
+import AddItemButton from './SubComponents/AddItemButton'
+import StudyItem from './SubComponents/StudyItem'
+import StudyForm from './SubComponents/StudyForm'
 
 class Education extends React.Component {
   constructor (props) {

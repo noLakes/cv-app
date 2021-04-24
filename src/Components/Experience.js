@@ -1,8 +1,8 @@
 import React from 'react'
 import uniqid from 'uniqid'
-import Job from './Job'
-import JobForm from './JobForm'
-import AddItemButton from './AddItemButton'
+import AddItemButton from './SubComponents/AddItemButton'
+import Job from './SubComponents/Job'
+import JobForm from './SubComponents/JobForm'
 
 class Experience extends React.Component {
   constructor (props) {
