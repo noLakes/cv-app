@@ -35,8 +35,39 @@ body {
 
 .resume-container {
   background-color: azure;
-  border: 1px solid rgba(112, 128, 144, 0.66);
+  border-top: 2px solid rgba(142, 162, 181, 0.66);
+  border-right: 2px solid rgba(142, 162, 181, 0.66);
+  border-bottom: 1px solid rgba(142, 162, 181, 0.66);
+  border-left: 1px solid rgba(142, 162, 181, 0.66);
   border-radius: 5px;
   padding: 1rem;
   box-shadow: -4px 6px 2px rgba(112, 128, 144, 0.66);
+}
+
+.personal-details-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.cv-section {
+  margin-bottom: 1rem;
+}
+
+h1, .form-h1 {
+  font-size: 36px;
+}
+
+h2, .form-h2 {
+  font-size: 28px;
+}
+
+h3, .form-h3 {
+  font-size: 20px;
 }

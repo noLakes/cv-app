@@ -77,7 +77,7 @@ class Education extends React.Component {
     })
 
     return (
-      <div className='education-container'>
+      <div className='education-container cv-section'>
         <h3>Education</h3>
         <ul className='study-list'>
           {studyList}
