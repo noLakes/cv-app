@@ -19,7 +19,7 @@ function Job (props) {
       </div>
 
       <div className='delete-container'>
-        <button onClick={() => handleDelete(data.id)}>del</button>
+        <button className='delete' onClick={() => handleDelete(data.id)}>del</button>
       </div>
 
     </div>

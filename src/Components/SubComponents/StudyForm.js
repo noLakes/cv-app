@@ -6,39 +6,31 @@ function StudyForm (props) {
 
   if (editing) {
     return (
-      <form onSubmit={handleSubmit}>
+      <form className='section-form' onSubmit={handleSubmit}>
 
         <div className='form-control w-50'>
-          <label>
-            School
-            <input type='text' name='school' placeholder='school/institute' onChange={handleChange}/>
-          </label>
+          <label>School</label>
+          <input type='text' name='school' placeholder='school/institute' onChange={handleChange}/>
         </div>
 
         <div className='form-control w-50'>
-          <label>
-            Degree
-            <input type='text' name='qualification' placeholder='degree or field of study' onChange={handleChange}/>
-          </label>
+          <label>Degree</label>
+          <input type='text' name='qualification' placeholder='degree or field of study' onChange={handleChange}/>
         </div>
 
         <div className='form-control w-50'>
-          <label>
-            From
-            <input type='text' name='from' placeholder='MM/YYYY' onChange={handleChange}/>
-          </label>
+          <label>From</label>
+          <input type='text' name='from' placeholder='MM/YYYY' onChange={handleChange}/>
         </div>
 
         <div className='form-control w-50'>
-          <label>
-            Till
-            <input type='text' name='till' placeholder='MM/YYYY' onChange={handleChange}/>
-          </label>
+          <label>Till</label>
+          <input type='text' name='till' placeholder='MM/YYYY' onChange={handleChange}/>
         </div>
 
-        <div className='form-control'>
-          <input type='submit' value='save'/>
-          <input type='button' value='cancel' onClick={cancelForm}/>
+        <div className='form-control flex-row'>
+          <input type='submit' className='save' value='save'/>
+          <input type='button' className='cancel' value='cancel' onClick={cancelForm}/>
         </div>
 
       </form>

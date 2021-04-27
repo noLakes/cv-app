@@ -6,53 +6,41 @@ function JobForm (props) {
 
   if (editing) {
     return (
-      <form onSubmit={handleSubmit}>
+      <form className='section-form' onSubmit={handleSubmit}>
 
         <div className='form-control'>
-          <label>
-            Employer
-            <input type='text' name='employer' placeholder='employer' onChange={handleChange}/>
-          </label>
+          <label>Employer</label>
+          <input type='text' name='employer' placeholder='employer' onChange={handleChange}/>
         </div>
 
         <div className='form-control w-50'>
-          <label>
-            Role
-            <input type='text' name='role' placeholder='role' onChange={handleChange}/>
-          </label>
+          <label>Role</label>
+          <input type='text' name='role' placeholder='role' onChange={handleChange}/>
         </div>
 
         <div className='form-control w-50'>
-          <label>
-            Location
-            <input type='text' name='location' placeholder='city/country' onChange={handleChange}/>
-          </label>
+          <label>Location</label>
+          <input type='text' name='location' placeholder='city/country' onChange={handleChange}/>
         </div>
 
         <div className='form-control w-50'>
-          <label>
-            From
-            <input type='text' name='from' placeholder='MM/YYYY' onChange={handleChange}/>
-          </label>
+          <label>From</label>
+          <input type='text' name='from' placeholder='MM/YYYY' onChange={handleChange}/>
         </div>
 
         <div className='form-control w-50'>
-          <label>
-            Till
-            <input type='text' name='till' placeholder='MM/YYYY' onChange={handleChange}/>
-          </label>
+          <label>Till</label>
+          <input type='text' name='till' placeholder='MM/YYYY' onChange={handleChange}/>
         </div>
 
         <div className='form-control'>
-          <label>
-            Description
-            <input type='textarea' name='description' placeholder='some details about the role...' onChange={handleChange}/>
-          </label>
+          <label>Description</label>
+          <input type='textarea' name='description' placeholder='some details about the role...' onChange={handleChange}/>
         </div>
 
-        <div className='form-control'>
-          <input type='submit' value='save'/>
-          <input type='button' value='cancel' onClick={cancelForm}/>
+        <div className='form-control flex-row'>
+          <input type='submit' className='save' value='save'/>
+          <input type='button' className='cancel' value='cancel' onClick={cancelForm}/>
         </div>
 
       </form>

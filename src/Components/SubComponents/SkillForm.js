@@ -6,18 +6,16 @@ function SkillForm (props) {
 
   if (editing) {
     return (
-      <form onSubmit={handleSubmit}>
+      <form className='section-form' onSubmit={handleSubmit}>
 
         <div className='form-control w-50'>
-          <label>
-            Skill
-            <input type='text' name='skill' placeholder='Photoshop, HTML, etc..' onChange={handleChange}/>
-          </label>
+          <label>Skill</label>
+          <input type='text' name='skill' placeholder='Photoshop, HTML, etc..' onChange={handleChange}/>
         </div>
 
-        <div className='form-control'>
-          <input type='submit' value='save'/>
-          <input type='button' value='cancel' onClick={cancelForm}/>
+        <div className='form-control flex-row'>
+          <input type='submit' className='save' value='save'/>
+          <input type='button' className='cancel' value='cancel' onClick={cancelForm}/>
         </div>
 
       </form>

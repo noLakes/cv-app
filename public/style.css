@@ -71,3 +71,75 @@ h2, .form-h2 {
 h3, .form-h3 {
   font-size: 20px;
 }
+
+p, li, .form-li  .form-p {
+  font-size: 16px;
+}
+
+.form-h1, .form-h2, .form-h3, .form-li, .form-p {
+  padding: 0 0 0 2px;
+  border: 0;
+}
+
+input[type='text'], input[type='textarea'] {
+  border: 1px solid rgba(128, 128, 128, 0.406);
+  border-radius: 5px;
+}
+
+input[name='from'], input[name='till'] {
+  width: max-content;
+}
+
+.section-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+input[type='button'], input[type='submit'], button {
+  border: 1px solid rgba(128, 128, 128, 0.475);
+  box-shadow: -1px 1px grey;
+  border-radius: 5px;
+}
+
+.save {
+  margin-right: 1rem;
+  background-color: rgba(94, 187, 94, 0.81);
+  box-shadow: -1px 1px rgba(59, 114, 59, 0.81);
+}
+
+.save:hover {
+  background-color: rgb(94, 187, 94);
+}
+
+.cancel {
+  background-color: rgba(237, 189, 107, 0.831);
+  box-shadow: -1px 1px rgba(186, 138, 56, 0.783);
+}
+
+.cancel:hover {
+  background-color: rgb(237, 189, 107);
+}
+
+.delete {
+  background-color: rgba(228, 109, 82, 0.817);
+  box-shadow: -1px 1px rgba(181, 89, 69, 0.817);
+}
+
+.delete:hover {
+  background-color: rgb(230, 97, 67);
+}

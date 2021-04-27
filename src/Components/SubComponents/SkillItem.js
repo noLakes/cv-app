@@ -7,7 +7,7 @@ function SkillItem (props) {
   return (
     <div className='skill-container'>
       <h5 className='skill'>{data.skill}</h5>
-      <button onClick={() => handleDelete(data.id)}>X</button>
+      <button className='delete' onClick={() => handleDelete(data.id)}>X</button>
     </div>
   )
 }
