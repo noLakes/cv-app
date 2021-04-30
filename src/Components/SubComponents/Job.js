@@ -5,21 +5,21 @@ function Job (props) {
   const { data, handleDelete } = props
 
   return (
-    <div className='job-container'>
+    <div className='item-container job-container'>
 
-      <div className='job-details-container-left'>
-        <h5 className='employer'>{data.employer}</h5>
-        <h6 className='location'>{data.location}</h6>
-        <h6 className='from-till'>{data.from} - {data.till}</h6>
+      <div className='job-details-left'>
+        <h4 className='employer'>{data.employer}</h4>
+        <h5 className='location'>{data.location}</h5>
+        <h5 className='from-till'>{data.from} - {data.till}</h5>
       </div>
 
-      <div className='job-details-container-right'>
-        <h5 className='role'>{data.role}</h5>
+      <div className='job-details-right'>
+        <h4 className='role'>{data.role}</h4>
         <p className='summary'>{data.description}</p>
       </div>
 
       <div className='delete-container'>
-        <button className='delete' onClick={() => handleDelete(data.id)}>del</button>
+        <button className='delete' onClick={() => handleDelete(data.id)}>X</button>
       </div>
 
     </div>

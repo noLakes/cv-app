@@ -71,7 +71,7 @@ class Skills extends React.Component {
     })
 
     return (
-      <div className='skill-container cv-section'>
+      <div className='skills-container cv-section'>
         <h3>Skills</h3>
         <ul className='skill-list'>
           {skillList}
